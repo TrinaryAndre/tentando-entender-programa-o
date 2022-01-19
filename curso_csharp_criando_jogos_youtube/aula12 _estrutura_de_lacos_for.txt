@@ -1,0 +1,80 @@
+
+se precisarmos repetir algo
+como o código 10 vezes por exemplo
+
+
+{
+    void Start()
+    {
+        for (int x = 0; x < 10; x = x+1)
+        {
+            Debug.Log(x);
+        }
+    }
+
+}
+
+
+linha 9  for (int x = 0; x < 10; x = x+1)
+
+dentro do for foi declarado uma 
+variavel inteira x = 10
+depois foi declarado outra x <10
+e outra x = x+1 
+
+o que acontece
+vai printar x é igula a zero? print 
+mas continua sendo menor que x = 10 
+então o programa ira printar +1 
+conforme a seguinte x = x+1
+e assim x passa ser 1
+depois disso o programa ira verificar novamente se 
+x continua sendo menor que 10
+enquanto isso acontecer ele vai printar +1 até alcançar 
+x é igual a 10 
+não printou o 10 porque a condiçao é se x é menor que 9 e 
+não igual a 10
+
+como foi o Debug
+
+0
+UnityEngine.Debug:Log (object)
+lacosFor:Start () (at Assets/Scripts/lacosFor.cs:11)
+
+1
+UnityEngine.Debug:Log (object)
+lacosFor:Start () (at Assets/Scripts/lacosFor.cs:11)
+
+2
+UnityEngine.Debug:Log (object)
+lacosFor:Start () (at Assets/Scripts/lacosFor.cs:11)
+
+3
+UnityEngine.Debug:Log (object)
+lacosFor:Start () (at Assets/Scripts/lacosFor.cs:11)
+
+4
+UnityEngine.Debug:Log (object)
+lacosFor:Start () (at Assets/Scripts/lacosFor.cs:11)
+
+5
+UnityEngine.Debug:Log (object)
+lacosFor:Start () (at Assets/Scripts/lacosFor.cs:11)
+
+6
+UnityEngine.Debug:Log (object)
+lacosFor:Start () (at Assets/Scripts/lacosFor.cs:11)
+
+7
+UnityEngine.Debug:Log (object)
+lacosFor:Start () (at Assets/Scripts/lacosFor.cs:11)
+
+8
+UnityEngine.Debug:Log (object)
+lacosFor:Start () (at Assets/Scripts/lacosFor.cs:11)
+
+9
+UnityEngine.Debug:Log (object)
+lacosFor:Start () (at Assets/Scripts/lacosFor.cs:11)
+
+

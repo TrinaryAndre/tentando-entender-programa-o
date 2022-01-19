@@ -1,0 +1,114 @@
+estruturras de decisao
+estruturas de repetição
+
+estrutura condicional
+ex: um jogo muda o placar toda vez
+que um time marca uma pontuaçao
+
+toda vez que houver uma marcaçao 
+a estrutura é analisada e alterada
+conforme a condiçao
+
+if
+
+ex: 
+var jogador1 = 0;
+var jogador2 = 0;
+
+if(jogador1 > 0){
+    console.log('jogador1 marcou ponto');
+}
+
+leitura
+se o jogador 1 tiver valor maior que 0
+ele marcou ponto.
+
+
+/
+
+.>>>laços de repetição
+
+for
+for/in
+while
+do/while
+
+for 
+funciona como uma repetição de intrução até que a condiçao
+seja falas:
+
+for ([expressaoinicial]; [condicao]; [incremento]){
+decalaraçao}
+
+ex: var array = ['valor1', 'valor2', 'valor3', 'valor4']
+for (let i = 0; i <array.lenght; i++){
+    console.log(i);
+}
+
+
+// funciona como repetiçao a partir de um propriedade
+// for in <<<>>>
+for ([indice] in [objeto ou array]){
+    declaraçao}
+
+    var array = ['valor1', 'valor2', 'valor3', 'valor3', 'valor4']
+
+    for (i in array){
+        console.log(i);
+    }
+
+
+    for/of <<>>
+for ([indice] of [array]){
+    decalaraçao
+}
+
+var array = ['valor1', 'valor2', 'valor3', 'valor4']
+    for (i of array){
+        console.log(i);
+    }
+
+    o for/of
+    não funciona com objetos pois as propriedades variam.
+    diferente do inidice em um array que sempre serão
+    números inteiros.
+    mas se eu quiser pegar o valor mesmo assim?
+    ex:
+    for(i of object.propriedade){
+        console.log(i);
+
+        // porem cada caractere dentro do valor será impresso
+        em linhas separadas
+
+
+        while <<>>
+
+        executa uma instrução "enquanto" determinada condiçao
+        for verdadeira, a verificação é feita antes da execução;
+
+        ex:
+        var a = 0;
+        while(a < 10){
+            a++;
+            console.log(a);
+        }
+
+        enquanto a variável a for menor que 10 ela 
+        vai receber mais 1 e imprimir no console
+
+
+        <<> do/while
+
+        executa uma instrução "até que" determinada condiçao seja falsa,
+        a verificação é feita depois da execução;
+
+        var a = 0;
+        do{
+            a++;
+            console.log(a);
+    
+        } while (a < 10)
+
+
+    a variável a vai receber mais um e imprimir no console
+    até que o seu valor chegue a 10

@@ -1,0 +1,178 @@
+>>>>>>>>>>>>>codigo anterior 07/10/2021
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class aulas : MonoBehaviour
+{   
+    int numero1, numero2;
+
+    void Start()
+    {
+        numero1 = 10;
+        numero2 = 20; 
+        Soma();
+        multiplicacao(numero1, numero2);
+    }
+
+    void Update()
+    {
+        
+    }
+
+    void Soma()
+    {
+        int resultado;
+        resultado = numero1 + numero2;
+         Debug.Log(resultado);
+    }
+    
+void multiplicacao(int valorA, int valorB)
+    {
+         int resultado;
+         resultado = valorA * valorB;
+         Debug.Log(resultado);
+    }
+
+}
+
+lembrando que esse metodo é VOID ele o retorno dele é zero
+--------------------
+como os numeros cadastrados acima são inteiros 10 e 20
+o metodo que vamos criar tambem dara um retorno inteiro
+
+int sub(int valorA, int valorB)
+{
+    int resultado = recebe valorB - valorA;
+    return(resultado);
+}
+
+-------------------
+agora para chamar esse novo metodo no void Start
+
+public class aulas : MonoBehaviour
+{   
+    int numero1, numero2, ""resultadoSub;"" \\ criado essa nova variavel
+
+    void Start()
+    {
+        numero1 = 10;
+        numero2 = 20; 
+        Soma();
+        multiplicacao(numero1, numero2);
+        resultadoSub = sub(numero1, numero2);\\ a variavel criada recebe o nome do metodo e o chama
+        Debug.Log(resultadoSub) para imprimir na unity) 
+    }
+\\\\\
+\\\\\
+
+
+
+@@@
+DESAFIO
+
+duas variaveis novas
+int lifePlayer = 100, atackEnemy = 10, atualLifePlayer;
+
+///////////////
+implementar na #aulas
+
+{   
+    int lifePlayer = 100, atackEnemy = 10, actuallyLifePlayer, damage;
+
+    void Start()
+    {
+        actuallyLifePlayer = 50;
+        damage = hitDamage(lifePlayer, atackEnemy, actuallyLifePlayer);
+        Debug.Log(damage);
+       
+    }
+
+    void Update()
+    {
+        
+    }
+
+    int hitDamage(int actuallyLifePlayer, int atackEnemy, int lifePlayer)
+    {
+        int hitDamage = (actuallyLifePlayer - lifePlayer) /atackEnemy;
+        return(hitDamage);
+        
+    }
+
+}
+
+/////
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class desafioenemyatacks : MonoBehaviour
+{   
+    int lifePlayer = 100, atackEnemy = 10, actuallyLifePlayer, damage;
+
+    void Start()
+    {
+        actuallyLifePlayer = 50;
+        damage = hitDamage(lifePlayer, atackEnemy, actuallyLifePlayer);
+        Debug.Log(damage);
+       
+    }
+
+    void Update()
+    {
+        
+    }
+
+    int hitDamage(int actuallyLifePlayer, int atackEnemy, int lifePlayer)
+    {
+        int hitDamage = (actuallyLifePlayer - lifePlayer) /atackEnemy;
+        return(hitDamage);
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+=================
+versão do professor
+
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Métodos : MonoBehaviour
+{
+    int vidaPlayer = 100;
+    int atackEnemy = 10;
+    int vidaAtual;
+    int numeroDeGolpes;
+
+    void Start()
+    {
+        vidaAtual = 30;
+        numeroDeGolpes = QuantidadeDeGolpesRecebidos(vidaPlayer, atackEnemy, vidaAtual);
+        Debug.Log(numeroDeGolpes);
+    }
+     // não precisamos do update 
+
+    int QuantidadeDeGolpesRecebidos(int vidaTotal , int forçaGolpe , int valorVidaAtual)
+    {
+        int quantidadeDeGolpes;
+        // A equação abaixo calcula o valor da vida atual após receber uma certa quantidade de golpes 
+        // valorVidaAtual = (vidaTotal - (quantidadeDeGolpes * forçaGolpe);
+        // organizando a equação acima temos :
+        quantidadeDeGolpes = (valorVidaAtual - vidaTotal) / (-forçaGolpe);
+        return quantidadeDeGolpes;
+    }
+}

@@ -1,0 +1,46 @@
+funcoes são blocos de comandos e instruçoes para execuçao
+de determinadas tarefas:
+
+function nomeDaFuncao(){
+    ${instrucao};
+}
+
+nomeDaFuncao();
+
+
+como declara 
+geralmente se utiliza a a palavra reservada function
+seguida de ()
+e {}
+
+function funcao(){
+    console.log('mensagem');
+}
+
+funcao();
+
+() indica qu é um objeto do tipo function
+{} indica que é um bloco de instrução
+
+//// funcao com parametros <<>>
+
+as funcoes podem receber em sua declaração,
+parametros, que servem como variaves, onde
+sua atribuição pode ser feita durante a 
+chamada da funçao::
+
+function nomeDaFuncao(parametro) {
+    ${instrucao};
+}
+
+nomeDaFuncao(valorDoParametro);
+
+
+2
+funcoes aritméticas
+
+metodos nativos 
+number() - para converter valores em números;
+prompt() para registrar entradas de usuário;
+alert() para mostrar mensagem ao usuário;
+template string- para usar strings junto com expressoes;

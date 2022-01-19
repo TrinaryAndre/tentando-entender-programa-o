@@ -1,0 +1,54 @@
+
+Switch é muito bem aplicado quando possui estados dentro
+do nosso jogo
+e conforme cada estado do nosso jogo o switch executa uma açao 
+diferente
+
+estados?
+vamos supor que tenhamos um vilão
+estado1 : vilão ataca
+estado2 : vilão diferente
+estado3 : vilão foge
+
+personagem entra na sala
+e o vilao 
+assume o estado1
+
+quando o vilão ataca a gente 
+nos revidamos e o vilão 
+assume o estado2
+
+estamos quase ganhando
+o vilão 
+assume o estado3
+
+switch() assim que fica 
+default fuciona como else
+
+
+
+int estadoVilao = 1;
+switch(estadoVilao) // analisa qual é o estado
+{
+    case 1: // caso o vilao assuma o estado1 
+// logica aqui ex vilão atacar 
+        break; // estrutura do switch case, para parar
+    case 2: // caso o vilao assuma o estado 2
+            // vilao defente
+        break;// para parar
+    case 3:
+            // vilao foge
+        break;
+}
+
+{
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+}

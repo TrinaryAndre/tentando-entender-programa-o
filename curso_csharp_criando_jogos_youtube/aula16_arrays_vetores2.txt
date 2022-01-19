@@ -1,0 +1,77 @@
+outra forma, escalonar a quantidade de valores a ser passado para o vetor
+seria inviável fazer
+
+int[] numeros = {"10, 20, 30, .... até 1000 ou 1 milhão"};
+
+
+{
+    
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+}
+_________
+
+codigo com vetor,  tamanho 50
+utilizando o laço for 
+criando uma variavel inteiro
+indicar que o indice começa com zero 
+for int i(indice) = 0
+a cada momento o nosso numero i receberá um valor e esse será 
+o nosso novo indice
+
+para parar o laço for("estrutura de repetição")
+devemos colocar uma condição
+a condição será que o i seja menor ou igual ao tamanho
+do nosso vetor
+poderiamos expressar que i < 50 lembrando que o indice
+vai de 0 a 49 então ele atribuiria um valor na posição 49
+ou usar 
+o ¨¨length¨¨ para saber qual é o tamanho do nosso vetor
+i menor que o tamanho do nosso vetor
+i < numeros.Length
+utilizando o i ++ que equivale ao i+1 
+já que será alterado todas as posiçoes
+
+para atribuir valores de 10 em 10 para o nosso vetor
+até chegar aos 500
+
+vamos utilizar o valor de i acresentar +1 e multiplicar* por 10
+quando i for igual a zero:
+0+1 = 1
+* 10 = 10 
+
+quando i for igual a 1:
+1+1 = 2
+*10 = 20
+
+... até a ultima posição
+
+
+
+
+
+{
+    int[] numeros;
+
+    void Start()
+    {
+        numeros = new int[50];
+        for (int i = 0; i <numeros.Length; i++)
+        {
+            numeros[i] = (i + 1) * 10;
+            print(numeros[i])
+        }
+    }
+
+    void Update()
+    {
+        
+    }
+}

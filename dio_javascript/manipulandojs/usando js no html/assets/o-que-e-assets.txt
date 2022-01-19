@@ -1,0 +1,2 @@
+tudo que vai ser utilizado no projeto
+que não seja html, como arquivos de imagem

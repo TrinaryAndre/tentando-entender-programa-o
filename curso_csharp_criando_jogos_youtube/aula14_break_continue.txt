@@ -1,0 +1,56 @@
+
+usando a estrutura de laços 
+    void Start()
+    {
+        for (int x = 0; x < 10; x = x+1)
+        {
+            Debug.Log(x);
+        }
+    }
+
+}
+
+break serve para interromper o laço, dado uma condiçao
+por exemplo quero interromper o laço for ou while
+quando x for igual a 5 
+mas para isso eu tenho que criar uma condiçao
+
+void Start()
+{
+    for (int x = 0; x < 10; x = x+1)
+    {
+        if(x == 5) // condiçao criada
+        {
+            break; // pare
+        }
+        Debug.Log(x);
+    }
+}
+
+}
+
+linha 22 quando x assumir a posiçao de 5 o codigo para
+_______________
+
+agora com o continue
+
+void Start()
+{
+    for (int x = 0; x < 10; x = x+1)
+    {
+        if(x == 5) // condiçao criada
+        {
+            continue; // interromper apenas quando x for igual a 5 ou pule
+        }
+        Debug.Log(x);
+    }
+}
+
+linha 43 
+o codigo vai imprimir os x que são menores que 10 e pular o 5
+
+x3
+x4
+x6
+x7
+...

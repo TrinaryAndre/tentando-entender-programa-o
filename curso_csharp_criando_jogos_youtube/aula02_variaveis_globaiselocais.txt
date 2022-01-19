@@ -1,0 +1,103 @@
+lembrando 
+
+\\exemplo
+
+{
+    int lifePlayer = 10;
+    int lifePlayer = 10, atackEnemy = 5;
+    float jumpForce = 5.5f;
+    bool deathPlayer = false;
+    string Name = "Andre";
+
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+}
+
+essas variaveis acima  int float bool string sao globais pois 
+temos acesso a ela dentro de qualquer metodo que temos 
+criados no script
+----------------
+
+Conseguimos acessar por exemplo a variavel playerName 
+e alteramos o nome:
+{
+    int lifePlayer = 10;
+    int lifePlayer = 10, atackEnemy = 5;
+    float jumpForce = 5.5f;
+    bool deathPlayer = false;
+    string playerName = "Andre";
+
+
+    void Start()
+    {
+        playerName = "Pedro"; 
+    }
+
+    void Update()
+    {
+        
+    }
+}
+---------------------------
+agora  conseguimos acessar a variavel novamente
+e dentro do Void update 
+na variavel playerName colocamos o nome de Julia, 
+modificamos novamente
+
+{
+    int lifePlayer = 10;
+    int lifePlayer = 10, atackEnemy = 5;
+    float jumpForce = 5.5f;
+    bool deathPlayer = false;
+    string playerName = "Andre";
+
+
+    void Start()
+    {
+        playerName = "Pedro"; 
+    }
+
+    void Update()
+    {
+        playerName = "Julia";
+    }
+}
+
+**
+**
+
+//VARIAVEL Local
+
+Essa  variavel fica dentro do metodo e nao funciona se tentar
+acessar fora
+se tentarmos colocar essa variavel no void update vai dar erro
+pois nao vai ser localizada
+
+{
+    
+
+    void Start()
+    {
+        string enemyName;
+        enemyName = "Thanos";
+
+
+    }
+
+    void Update()
+    {
+
+    }
+}
+
+
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-13 06:35:35 PM"/>
+        <attribute name="created" value="YW5kcmU7REVTS1RPUC1TOURGVThSOzIwMjEtMTItMTM7MDY6MTg6NDMgUE07Mjg4NA=="/>
+        <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TOURGVThSOzIwMjEtMTItMTM7MDY6MjA6NDkgUE07MTthbmRyZTtERVNLVE9QLVM5REZVOFI7MjAyMS0xMi0xMzswMzozNTo1NiBQTTs1OTM0"/>
+        <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TOURGVThSOzIwMjEtMTItMTM7MDY6MzU6MzUgUE07MTsyOTky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <output expression="&quot;parab&#233;ns voc&#234; passou de ano&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media &lt;= 5">
+                        <then>
+                            <output expression="&quot;voc&#234; n&#227;o passou de ano&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;sua nota foi baixa, fa&#231;a a prova de recupera&#231;&#227;o&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

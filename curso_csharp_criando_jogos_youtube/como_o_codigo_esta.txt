@@ -1,0 +1,59 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class aulas : MonoBehaviour
+{   
+    int numero1, numero2, resultadoSub;
+    int lifePlayer = 100, atackEnemy = 10, actuallyLifePlayer, damage;
+
+
+    void Start()
+    {
+        numero1 = 10;
+        numero2 = 20; 
+        Soma();
+        multiplicacao(numero1, numero2);
+        resultadoSub = sub(numero1, numero2);
+        Debug.Log(resultadoSub); 
+        actuallyLifePlayer = 40;
+        damage = hitDamage(lifePlayer, atackEnemy, actuallyLifePlayer);
+        Debug.Log(damage);
+    }
+
+    void Update()
+    {
+        
+    }
+
+    void Soma()
+    {
+        int resultado;
+        resultado = numero1 + numero2;
+        Debug.Log(resultado);
+    }
+
+    void multiplicacao(int valorA, int valorB)
+    {
+        int resultado;
+        resultado = valorA * valorB;
+        Debug.Log(resultado);
+    }
+
+    int sub(int valorA, int valorB)
+    {
+        int resultado = valorB - valorA;
+        return(resultado);
+    }
+
+    int hitDamage(int actuallyLifePlayer, int atackEnemy, int lifePlayer)
+    {
+        int hitDamage = (lifePlayer - actuallyLifePlayer) / atackEnemy;
+        return(hitDamage);
+    }
+    
+
+}
+
+
+}

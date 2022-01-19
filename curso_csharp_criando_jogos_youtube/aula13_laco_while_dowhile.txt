@@ -1,0 +1,61 @@
+
+
+semelhante ao laço for
+mas dentro do () do while eu não consigo criar uma variável
+eu tenho que criar fora
+mas dentro do while eu consigo criar uma condiçao
+como uma condiçao para uma variavel global
+
+{
+    int x; \\ declarado a variavel x como nao tem valor o padrao é 0
+    void Start()
+    {
+      while(x < 10) \\ verificação de condiçao definindo o parametro
+      {
+          Debug.Log(x);
+          x = x + 1; declarando a variavel que ir mudar a global
+      }  
+    }    
+        
+    
+}
+
+
+enquanto x for menor que 10 o codigo continua sendo 
+
+no while nos fazemos a verificação no inicio do código / antes de executa-Lo
+no do while  a verificação é feita depois
+
+
+{
+  int x;
+  void Start() 
+  {
+    do
+    {
+        Debug.Log(x);
+        x = x + 1;
+    } while (x < 10);
+    
+  }
+      
+  
+}
+
+a verificação while ficou por ultimo, entao o codigo executa primeiro
+e depois verifica qual é a condiçao
+
+ele vê se x não é menor que 10 e acrescenta + 1 no inicio
+e faz esse loop até chegar ao 9
+
+o while só executa se a condiçao for verdadeira
+
+ex 
+    >> se perguntassemos se x é menor que 10 e acrescentassemos + 20 
+o código não executaria pois a condição seria falsa
+
+    >>> agora no 
+do while
+ele executaria uma vez sendo que x ficaria igual a 20 e logo em seguida
+pararia pois x já seria maior que 10 
+no caso do do while pelo menos uma vez o código seria executado

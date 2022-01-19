@@ -1,0 +1,52 @@
+metodo basicamente executa as instrucoes passadas no codigo
+quando a gente chama o metodo ele executa a instrucao
+por padrao quando se cria um script dentro da unity  ele começa
+assim com o metodo void e Update
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NewBehaviourScript : MonoBehaviour
+{
+
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+}
+//
+o void start é chamado no inicio do jogo
+ele executa tudo que esta dentro dele apenas uma vez
+após isso ele chama 
+
+//
+o void update, frame a frame, executa a primeira instrucao,
+depois a segunda, terceira... até a primeira novamente e 
+fica em loop enquanto o jogo fica sendo executado
+
+passando uma instrucao
+
+quero imprimir uma variável que descrevi anteriormente
+
+print / para imprimir algo na tela, resultado
+
+
+
+
+    void Start()
+    {
+        print(lifePlayer);
+    }
+
+    void Update()
+    {
+        
+    }
+

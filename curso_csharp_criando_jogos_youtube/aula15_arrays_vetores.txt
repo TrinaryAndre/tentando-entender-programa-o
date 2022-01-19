@@ -1,0 +1,116 @@
+                        Posições
+                  __________^___________
+                 |                      |
+ Valores ->      |10 |14 |20 |9 |16 |22 |
+                 |______________________|
+ Índices ->      |0  |1  |2  |3 |4  |5  |
+                 |______________________|
+
+
+arrays dentro da programação é um conjunto de elementos
+que podem ser acessados através de um Índice
+
+no nosso vetor nós temos 6 posições - Valores
+para acessar o segundo elemento ou quadrado que esta dentro
+desse vetor indetificamos que o indice dele é 1
+
+os Índices sempre começam com 0 zero
+a posição 0 do nosso vetor
+
+no caso estamos utilizando valores do tipo inteiro
+mas poderiamos usar valores do tipo string, bool, float...
+
+o nosso vetor possui 6 posições, então podemos falar que é um
+vetor de tamanho 6
+
+>>>> declarar um vetor como se fosse uma variavel
+se é inteiro booleano string float
+
+ex int {"declarar um vetor"} numeros = {"dados do vetor"};
+quando abre as chaves a unity já entende que é um vetor
+["indice"]
+
+
+
+{
+      int{} numeros = {10, 20, 30}; //atribuir valor ao vetor 
+      void Start()
+      {
+        print(numero[0]); // chamando o indice e printar a posiçao zero
+        // caso eu queira printar o n° da posição 2
+        print(numero[1]);
+      }    
+          
+      
+  }
+  
+  assim conseguimos acessar um elemento que está contido no 
+  nosso vetor
+
+  ++++++++++++++++++++++++++++
+
+  se eu quiser mudar algum elemento{}
+  acesse o indice [] e altere o valor que foi recebido
+
+
+  {
+      int{} numeros = {10, 20, 30}; //declarando o vetor 
+      void Start()
+      {
+        print(numero[0]); // chamando o indice e printar a posiçao zero
+        // caso eu queira printar o n° da posição 2
+        print(numero[1]);
+
+        numeros[1] = 30; // alterar  elemento na posiçao 1 recebe 30
+      }    
+          
+      
+  }
+
+  __________>
+
+  mais um vetor mas sem declarar algo
+  criando um novo vetor do tipo string
+  a unity precisa saber qual é o tamanho do vetor
+  caso contrario vai dar erro
+  antes de declarar qual será o elemento dentro do vetor
+  é necessario dizer qual será o tamanho do vetor
+  string "valor" = new string["valor tamanho do vetor"];
+  {
+      int{} numeros = {10, 20, 30};
+      string{} nomes;
+      void Start()
+      {
+        print(numero[0]); 
+        print(numero[1]);
+        numeros[1] = 30;
+        nomes = new string[5]; // tamanho do vetor > nomes
+        nomes[0] = "Andre"; // elemento 0 do vetor
+      }    
+          
+      
+  }
+
+  caso eu tentasse printar no vetor nomes o indice 1 
+  o print seria null(sem valor, nada)
+_________________________-
+code working
+  {
+    int [] numeros = {10, 20, 30};
+    string[] nomes;
+    void Start()
+    {
+        print(numeros[0]);
+        print(numeros[1]);
+        print(numeros[2]);
+        numeros[1] = 30;
+        nomes = new string[5];
+        nomes[0] = "andre";
+        print(nomes[0]);
+    }
+
+    void Update()
+    {
+        
+    }
+}

@@ -1,0 +1,81 @@
+
+operadores
+
+== igual
+!= diferente
+> maior que 
+< menor que 
+>= maior ou igual que
+<= menor ou igual que
+
+
+
+int numero1 = 10, numero2 = 20;
+
+void Start()
+{
+    print(numero1 == numero2);??
+}
+
+nesse caso estariamos perguntando se numero1 é igual a numero2
+como ela responde verdadeiro ou falso seria
+false pois numero1 tem um valor e numero2 tem outro valor
+
+.............
+
+funciona tambem para strings
+
+int numero1 = 10, numero2 = 20;
+
+string  nome1 = "Andre", nome2 = "andre";
+void Start()
+{
+    print(numero1 == numero2);
+    print(nome1 == nome2);
+}
+
+nesse caso estamos perguntando se o nome1 é igual o nome2
+como o c# diferencia maiscula e minuscula o retorno do print: false
+
+.............
+
+funciona tambem para bool
+
+int numero1 = 10, numero2 = 20;
+string  nome1 = "Andre", nome2 = "andre";
+bool win = true, lose = false;
+
+void Start()
+{
+    print(numero1 == numero2);
+    print(nome1 == nome2);
+    print(win == lose);
+}
+
+o retorno da bool também seria false
+pois logicamente um tem valor verdadeiro o outro falso
+===
+
+nao faz sentido usar na bool e string os outros operadores
+nao daria para perguntar/ nao faz sentido se a variavel win é maior que lose
+
+==
+com retorno verdadeiro 
+
+
+int numero1 = 10, numero2 = 20;
+string  nome1 = "Andre", nome2 = "andre";
+bool win = true, lose = false;
+
+void Start()
+{
+    print(numero1 == numero2);
+    print(nome1 == nome2);
+    print(win == lose);
+    print(numero2 > numero1);
+}
+
+agora perguntamos se o numero2 é maior que o numero1
+se 20 é maior que 10.. o resultado é true
+
+testando na unity

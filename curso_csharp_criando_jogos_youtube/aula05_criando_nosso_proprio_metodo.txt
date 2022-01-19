@@ -1,0 +1,143 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NewBehaviourScript : MonoBehaviour
+{
+
+    void Start()
+    {
+      
+    }
+
+    void Update()
+    {
+        
+    }
+}
+
+
+// o metodo acima é padrao da UnityEngine
+eles tem a mesma estrutura. Ambos possuem a palavra
+Void nomeMetodo() {digite o seu codigo aqui}
+
+quando nos temos um metodo que nao possui retorno 
+ele e do tipo void
+retorno e quando o metodo retorna algum valor para a gente
+
+parametros é o valor que digitamos dentro das chaves, são os
+valores que colocamos dentro do nosso metodo
+
+
+
+int numero1, numero2; \\ criando a variavel
+   
+void Start()
+{
+     numero1 = 10; \\ atribuindo valor a variavel
+     numero2 = 20; \\ '' ''         '        '''
+     Soma();         \\ chamando a variavel
+}
+
+void Update()
+{
+    
+}
+
+void Soma()
+{
+int resultado; \\ criando a variavel
+resultado = numero1 + numero2; outra variavel (somar)
+debug.log(resultado); funciona igual ao print
+}
+
+}
+
+foi criado duas variaveis numero1 e numero2
+que receberam os valores dentro do void Start
+10 e 20
+foi criado um chamado: soma
+foi criado um metodo: soma
+que recebeu uma variavel
+essa variavel recebeu o pedido de soma dos valores informados
+foi pedido para debugar debug, que vai mostrar o valor
+
+
+------
+\\depois//
+
+------------------------------
+foi criada uma nova variavel só que agora essa recebe parametro
+
+int numero1, numero2; declarando variavel
+   
+void Start()
+{
+    int numero1 = 10; valor da variavel
+    int numero2 = 20;
+    Soma(); chamando a variavel
+    multiplicacao(numero1, numero2); foi criado um metodo multiplicao valorA igual numero1 e valorB igual numero2
+}
+
+void Update()
+{
+    
+}
+
+void Soma()
+{
+int resultado;
+resultado = numero1 + numero2;
+debug.log(resultado);
+}
+
+------
+\\\\\outro metodo
+
+
+
+void multiplicacao(int valorA, int valorB) \\ parametro dentro do metodo
+{
+    int resultado;
+    resultado = valorA * valorB; \\igual numero1 e numero2
+    debug.log(resultado);
+}
+
+}
+
+é parecida com o metodo soma, 
+o valorA e o int e o int valorB equivale ao int numero1 e int numero2
+
+///////// codigo \\\\\\\\\\\
+
+{   
+    int numero1, numero2;
+
+    void Start()
+    {
+        numero1 = 10;
+        numero2 = 20; 
+        Soma();
+        multiplicacao(numero1, numero2);
+    }
+
+    void Update()
+    {
+        
+    }
+
+    void Soma()
+    {
+    int resultado;
+    resultado = numero1 + numero2;
+    Debug.Log(resultado);
+    }
+void multiplicacao(int valorA, int valorB)
+    {
+    int resultado;
+    resultado = valorA * valorB;
+    Debug.Log(resultado);
+    }
+
+}
+

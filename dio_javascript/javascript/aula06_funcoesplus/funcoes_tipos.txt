@@ -1,0 +1,35 @@
+funcoes declarativas
+uso mais comum, deve ser declarada usando a palavra
+reservada function, seguida do nome da funcao, parenteses () e 
+chaves {}
+
+function nomeDaFuncao() {
+    ${instrução};
+}
+// o nome da funcao é obrigatório
+
+
+>>> expressoes de funcoes
+sao funcoes atribuidas á expressões. A 
+nomeação das funcoes por expressao é opcional:
+
+var funcao = function nomeDaFuncao() {
+    ${instrução};
+}
+
+2
+var funcao = function( {
+    ${instrucao};
+};
+
+>>>> arrow function
+
+sao funcoes de expressao de sintaxe curta. Arrow functions
+sempre serão anônimas, e portanto não pode
+ser nomedadas.  Deve ser declarada com 
+parênteses '()', segudo de "=>" e depois
+chaves "{}"
+
+var funcao = () => {
+    {instrucao};
+}

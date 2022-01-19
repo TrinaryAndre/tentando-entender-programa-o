@@ -1,0 +1,103 @@
+
+a variavel quando nao tem valor definido recebe 0
+quando esta dentro do void start fica
+numero recebe 0 + 1 e fica o valor 1 somente isso
+
+int numero;
+
+    void Start()
+    {
+        numero = numero + 1;
+    }
+
+=============================================
+
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class desafioenemyatacks : MonoBehaviour
+{   
+
+    int numero;
+
+    void Start()
+    {
+        numero = numero + 1;
+    }
+
+    void Update()
+    {
+        
+    }
+
+}
+
++++++++++++++++++++++++++
+
+agora a mesma lógica dentro do void Update lembrando que ele
+fica em loop
+vai ficar numero = 0 + 1 = 1
+depois numero = 1 + 1 = 2 
+e assim em looping
+
+
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class desafioenemyatacks : MonoBehaviour
+{   
+
+    int numero;
+
+    void Start()
+    {
+
+    }
+
+    void Update()
+    {
+        numero = numero + 1;
+    }
+
+}
+
+>>>> para decrementar é só fazer um -1 ou -2 ou -50...
+
+exemplo colocar uma propaganda para um jogo android
+para nao ficar repetitivo podemos colocar um contador 
+que conta quantas as vezes o personagem passou por uma fase
+e aparecer uma propaganda no final de cada uma delas
+
+==
+podemos colocar um contador dentro do jogo
+
+
+==^
+lembrando que contador é do tipo float
+59.1 segundos
+40.10 segundos
+==^
+
+usar a ferramenta da unity para tempo que é o 
+>>Time.deltaTime;<<
+
+
+{
+    float tempo;
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        tempo = tempo + Time.deltaTime;
+        Debug.log(tempo);
+    }
+}
+

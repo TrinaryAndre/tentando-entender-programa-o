@@ -1,0 +1,61 @@
+
+logica simples vamos ver se com x moedas conseguimos 
+comprar o personagem que custa y
+
+usando o if e o else / else if
+
+if(condiçao a ser analisada)
+{
+    abre e fecha colchetes e cria o nosso codigo
+}
+else
+{
+    caso a condição seja falso
+}
+
+poderiamos colocar somente o if mas ele so passaria para 
+a proxima linha e não teria uma condiçao especifica para fazer
+se o resultado fosse falso
+
+
+
+int moedas = 50, precopersonagem =  100
+{
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+}
+
+estrutura completa
+
+public class iforelse : MonoBehaviour
+{
+    int moedas = 100, precoPersonagem =  100;
+
+    void Start()
+    {
+       if(moedas > precoPersonagem)
+       {
+           print("Posso comprar personagem"); // caso moeda for maior
+       } 
+       else if(moedas == precoPersonagem)
+       {
+           print("Posso comprar o personagem porem fico sem moedas"); //caso moeda seja igual
+       }
+       else
+       {
+          print("Moedas insuficientes"); // caso tenha menos moedas
+       }
+    }
+
+    void Update()
+    {
+        
+    }
+}

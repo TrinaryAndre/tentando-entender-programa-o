@@ -1,0 +1,112 @@
+par ou ímpar
+
+
+
+sabendo que todo número divido por 2 o resto é zero
+
+
+public class exerciciofixar : MonoBehaviour
+
+
+
+{
+    //par ou ímpar
+
+    string txt2;
+
+    void Start()
+    {
+        txt2 = impar_par(4);
+        Debug.Log(txt2);
+    }
+    string impar_par(int numero)
+    {   
+        string txt;
+        if(numero == 0)
+            {   
+             txt = "o número é nulo";
+            }
+        else
+            {
+            int resto = numero % 2;
+            if(resto == 0)
+            {
+                txt = "é par";
+            }
+            else
+            {
+                txt = "o número é ímpar";
+            }
+        }
+        return txt;// tudo que foi adicionado retorna lá para o void Start
+
+
+    }
+________________________________________
+
+com switch /// default funciona como else <<<<>>>>
+
+    using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class exerciciofixar : MonoBehaviour
+{
+    //par ou ímpar
+
+    string txt2;
+
+    void Start()
+    {
+        txt2 = impar_par(4);
+        Debug.Log(txt2);
+    }
+    string impar_par(int numero)
+    {   
+        string txt;
+        if(numero == 0)
+            {   
+             txt = "o número é nulo";
+            }
+        else
+            {
+            int resto = numero % 2;
+            if(resto == 0)
+            {
+                txt = "é par";
+            }
+            else
+            {
+                txt = "o número é ímpar";
+            }
+        }
+        return txt;
+    }
+    string par_impar( int numero)
+    {
+        string txt;
+        switch (numero)
+        {
+            case 0:
+                txt = "o número é nulo";
+                break;
+            default:
+                   int resto = numero % 2;
+                   switch(resto)
+                   {
+                       case 0:
+                       txt = "o número é par";
+                            break;
+                        default:
+                        txt = "ímpar";
+                        break;
+                   }
+                break;
+                        
+        }
+        return txt;
+    }
+}
+
+ 
+}

@@ -1,0 +1,62 @@
+>
+estrutura condicional permite criar uma logica
+que executa ações diferentes
+dependendo da condicição criada
+
+>
+operador ternario permite atribuir valor dentro da variavel
+dependendo da condição criada
+
+>
+sao formados por tres estruturas operando por isso operadores_ternarios
+
+
+criamos a nossa condicao colocamos o ponto de interrogaçao
+apos o ponto de interrogaçao colocamos o valor a ser atribuido
+caso o valor seja verdadeiro e colocamos : dois pontos caso seja falso
+
+
+
+
+public class operadores_ternarios : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        // condicao ? valor a ser atibuido caso o valor verdadeiro : caso falso 
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
+
+como fica
+
+public class operadores_ternarios : MonoBehaviour
+{
+    int numero1 = 10, numero2 = 20;
+    string resultado;
+    void Start()
+    {
+        resultado = numero1 > numero2 ? "sim" : "não";
+        Debug.Log(resultado);
+    }
+
+    void Update()
+    {
+        
+    }
+}
+
+>>> foi perguntado se numero1 é maior que numero2
+como a variavel seguinte e uma string ela deve conter texto
+dentro do operador ternario ela pode obter resultados diferentes
+primeiro antes do ponto e virgula e o segundo depois do ponto e virgula
+
+se o resutado da pergunta 
+numero1 é maior que numero2 for sim 
+ele vai printar sim que é o  valor antes da virgula
+caso contrario vai printar não que é o valor depois da virgula
